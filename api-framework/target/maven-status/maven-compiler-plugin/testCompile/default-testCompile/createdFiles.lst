@@ -1,0 +1,16 @@
+com\ramrewa\api\AppTest.class
+com\ramrewa\api\helper\BaseHelper.class
+com\ramrewa\api\model\Rain.class
+com\ramrewa\api\model\WeatherResponse.class
+com\ramrewa\api\model\Coord.class
+com\ramrewa\api\util\URLResources.class
+com\ramrewa\api\model\WeatherHumidity.class
+com\ramrewa\api\model\Wind.class
+com\ramrewa\api\util\RestInvocationUtil.class
+com\ramrewa\api\model\Clouds.class
+com\ramrewa\api\model\Latitude.class
+com\ramrewa\api\definition\WeatherMapDefinition.class
+com\ramrewa\api\model\WeatherItem.class
+com\ramrewa\api\util\SharedData.class
+com\ramrewa\api\util\TestProperties.class
+com\ramrewa\api\model\Sys.class
