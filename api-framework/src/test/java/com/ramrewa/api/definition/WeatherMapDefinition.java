@@ -11,7 +11,7 @@ public class WeatherMapDefinition extends WeatherMapHelper {
     private final static Logger logger = Logger.getLogger("WeatherMapDefinition.class");
 
     @When("^the user selects the weather with latitude \"([^\"]*)\" and longitude \"([^\"]*)\"$")
-    public WeatherResponse theUserSelectsTheWeatherLatitudeAndLongitude(String latitude, String longitude) throws Throwable {
+    public WeatherResponse theUserSelectsTheWeatherWithLatitudeAndLongitude(String latitude, String longitude) throws Throwable {
         logger.info("The user selects latitude and longitude");
         logger.info(latitude);
         logger.info(longitude);
