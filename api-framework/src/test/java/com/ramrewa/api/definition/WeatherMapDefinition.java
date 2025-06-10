@@ -12,12 +12,14 @@ public class WeatherMapDefinition extends WeatherMapHelper {
 
     @When("^the user selects the weather with latitude \"([^\"]*)\" and longitude \"([^\"]*)\"$")
     public WeatherResponse theUserSelectsTheWeatherLatitudeAndLongitude(String latitude, String longitude) throws Throwable {
-        logger.info("The user selects latitude and longitude.");
+        logger.info("The user selects latitude and longitude");
+        logger.info(latitude);
+        logger.info(longitude);
         return null;
     }
 
     @Then("^the user should see information on weather map$")
-    public void theUserShouldSeeInformationOnStoresNearby() {
-        logger.info("This is message 1");
+    public void theUserShouldSeeInformationFromWeatherMap() {
+        logger.info("This message is from API");
     }
 }
