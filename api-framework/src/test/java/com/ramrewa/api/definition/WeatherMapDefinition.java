@@ -30,5 +30,5 @@ public class WeatherMapDefinition extends WeatherMapHelper {
             Assert.assertNotNull(location.getLatitude(), "Location latitude is not returned");
             Assert.assertNotNull(location.getLongitude(), "Location longitude is not returned");*/
         }
-    }
+
 }
