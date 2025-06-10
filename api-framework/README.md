@@ -32,3 +32,7 @@ For Regression
 ```sh
 mvn clean test verify -Denv=test -Pregression -DsaveRequestResponse=yes
 ```
+For Single feature file run 
+```sh
+mvn test -Dcucumber.features=src\test\resources\features\Login.feature
+```
