@@ -11,7 +11,7 @@ import com.ramrewa.api.util.URLResources;
 public class WeatherMapHelper extends BaseHelper {
     private final static Logger logger = Logger.getLogger("WeatherMapHelper.class");
 
-    public WeatherResponse iGetWeatherUsingLatAndLong(String lat, String lon) throws Throwable {
+    public WeatherResponse theUserSelectsTheWeatherLatitudeAndLongitude(String lat, String lon) throws Throwable {
         WeatherResponse response = null;
         String endPoint = URLResources.ONECALL_V1 + "?lat={" + lat + "}&lon={" + lon + "}&exclude={current}&appid={" + TestProperties.get("xapi-key")
                 + "}";

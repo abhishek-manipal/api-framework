@@ -1,25 +1,23 @@
 package com.ramrewa.api.definition;
 
+import com.ramrewa.api.model.WeatherResponse;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import com.ramrewa.api.helper.WeatherMapHelper;
 
+import java.util.logging.Logger;
+
 public class WeatherMapDefinition extends WeatherMapHelper {
+    private final static Logger logger = Logger.getLogger("WeatherMapDefinition.class");
 
     @When("^the user selects the weather with latitude \"([^\"]*)\" and longitude \"([^\"]*)\"$")
-    public void theUserSelectsTheWeatherLatitudeAndLongitude(Float latitude, Float longitude) throws Throwable {
-//        InputStream iStream = DiscoverDefinition.class.getResourceAsStream("/gqlQueries/metis/queries/rewards/discoverFeed.graphql");
-//        ObjectNode variables = new ObjectMapper().createObjectNode();
-//
-//        variables.put("latitude", latitude);
-//        variables.put("longitude", longitude);
-//        String graphqlQuery = GraphqlParser.parseGraphql(iStream, variables);
-//        rewardsDiscoverResponse = iRetrieveDiscoverFeed(graphqlQuery);
-        System.out.println("The user selects latitude and longitude.");
+    public WeatherResponse theUserSelectsTheWeatherLatitudeAndLongitude(String latitude, String longitude) throws Throwable {
+        logger.info("The user selects latitude and longitude.");
+        return null;
     }
 
-    @Then("^the user should see information on stores nearby$")
+    @Then("^the user should see information on weather map$")
     public void theUserShouldSeeInformationOnStoresNearby() {
-        System.out.println("Success message displayed.");
+        logger.info("This is message 1");
     }
 }
