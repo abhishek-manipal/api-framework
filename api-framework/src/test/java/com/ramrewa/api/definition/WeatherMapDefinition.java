@@ -21,7 +21,7 @@ public class WeatherMapDefinition extends WeatherMapHelper {
     @Then("^the user should see information on weather map$")
     public void theUserShouldSeeInformationFromWeatherMap() {
         logger.info("This message is from API");
-        /*List<Location> locations = rewardsDiscoverResponse.getData().getRewardsDiscover().getItems().get(0).getLocations();
+        /*List<Location> locations = Response.getData().getRewardsDiscover().getItems().get(0).getLocations();
         for (Location location : locations) {
             Assert.assertTrue(location.getIcon().matches(".*(openweathermap)"), "Location icon is not returned");
             Assert.assertTrue(location.getAddress().matches("^[ A-Za-z0-9-]*$"), "Location address is not returned");
